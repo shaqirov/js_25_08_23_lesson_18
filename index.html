@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" placeholder="Name" name="name">
+        <input type="email" placeholder="email" name="email">
+        <p>Комментарий:<Br><textarea name="comment" cols="40" rows="3" placeholder="Комментарий"></textarea></p>
+        <label for="grade">Оценка:</label>
+        <select id="grade" name="grade">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <div id="resultForm">
+        <p>Имя:</p>
+        <p>Почта:</p>
+        <p>Комментарий:</p>
+        <p>Оценка:</p>
+    </div>
+
+    <hr>
+
+    <form id="form2">
+        <input type="number" placeholder="Цена" name="cost">
+        <input type="number" placeholder="Скидка" name="discount">
+        <button type="submit">Рассчитать</button>
+    </form>
+
+    <div id="resultForm2">
+        <p>Начальная цена:</p>
+        <p>Размер скидки:</p>
+        <p>Итоговая цена:</p>
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
