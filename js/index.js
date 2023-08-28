@@ -26,10 +26,10 @@ function getFormValue(event) {
 
     const resultForm = document.getElementById('resultForm')
     resultForm.innerHTML = `
-        <p>Имя: ${values.name}</p>
-        <p>Почта: ${values.email}</p>
-        <p>Комментарий: ${values.comment}</p>
-        <p>Оценка: ${values.grade}</p>
+        <p><strong>Имя:</strong> ${values.name}</p>
+        <p><strong>Почта:</strong> ${values.email}</p>
+        <p><strong>Комментарий:</strong> ${values.comment}</p>
+        <p><strong>Оценка:</strong> ${values.grade}</p>
     `
 }
 
@@ -72,9 +72,9 @@ function getCostWithDiscount (event) {
     let lastCost = cost.value - (cost.value * discount.value / 100)
     const resultForm2 = document.getElementById('resultForm2')
     resultForm2.innerHTML = `
-        <p>Начальная цена: ${costWithDiscount.cost}</p>
-        <p>Размер скидки: ${costWithDiscount.discount}%</p>
-        <p>Итоговая цена: ${lastCost}</p>
+        <p><strong>Начальная цена:</strong> ${costWithDiscount.cost}</p>
+        <p><strong>Размер скидки:</strong> ${costWithDiscount.discount}%</p>
+        <p><strong>Итоговая цена:</strong> ${lastCost}</p>
     `
 }
 
